@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script type="text/javascript">
+        function showAlert() {
+            alert("Это простое уведомление.");
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Приветствия</title>
+    <script type="text/javascript">
+        // Первый способ: внедрение внутри тега <head>
+        // Выводит приветствие "Доброе утро" если время меньше чем 10
+        var d = new Date();
+        var time = d.getHours();
+        if (time < 10) {
+            document.write("<b>Доброе утро</b>");
+        }
+    </script>
+    <script type="text/javascript">
+        function showConfirm() {
+            let result = confirm("Вы уверены, что хотите продолжить?");
+            if (result) {
+                alert("Вы нажали 'OK'.");
+            } else {
+                alert("Вы нажали 'Cancel'.");
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function showPrompt() {
+            let userResponse = prompt("Пожалуйста, введите ваше имя:", "Имя");
+            if (userResponse !== null) {
+                alert("Привет, " + userResponse + "!");
+            } else {
+                alert("Вы нажали 'Cancel'.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Приветствия</h1>
+
+    <div id="greeting1">
+        <!-- Второй способ: внедрение внутри тега <body> -->
+        <script type="text/javascript">
+            // Если время меньше 10 часов, вы получите приветствие "Доброе утро".
+            // В противном случае вы увидите приветствие "Добрый день".
+            var d = new Date();
+            var time = d.getHours();
+            if (time < 10) {
+                document.write("Доброе утро!");
+            } else {
+                document.write("Добрый день!");
+            }
+        </script>
+    </div>
+
+    <div id="greeting2">
+        <!-- Третий способ: внедрение с использованием внешнего файла -->
+        <script src="script.js"></script>
+    </div>
+    <button onclick="showAlert()">Показать alert</button>
+    <button onclick="showConfirm()">Показать confirm</button>
+    <button onclick="showPrompt()">Показать prompt</button>
+    <a href="javascript:(function(){
+        alert('Привет, мир!');
+      })();">Нажми меня</a>
+      <h1>Пример с циклом for</h1>
+      <ul id="myList"></ul>
+    
+      <script>
+        const list = document.getElementById('myList');
+    
+        for (let i = 1; i <= 5; i++) 
+        {
+          const listItem = document.createElement('li');
+          listItem.textContent = "Элемент ${i}";
+          list.appendChild(listItem);
+        }
+      </script>
+    <h1>Пример с циклом while</h1>
+    <button id="countButton">Считать</button>
+    <p id="countDisplay">Счетчик: 0</p>
+    
+    <script>
+      const countButton = document.getElementById('countButton');
+      const countDisplay = document.getElementById('countDisplay');
+    
+      let count = 0;
+    
+      countButton.addEventListener('click', () => {
+        while (count < 10) {
+          count++;
+          countDisplay.textContent = `Счетчик: ${count}`;
+        }
+      });
+    </script>
+
+    <div id="greeting3">
+        <!-- Четвертый способ: внедрение с использованием обработчика событий -->
+        <script type="text/javascript">
+            window.onload = function() {
+                var d = new Date();
+                var theDay = d.getDay();
+                var greeting;
+                switch (theDay) {
+                    case 5:
+                        greeting = "Наконец-то Пятница";
+                        break;
+                    case 6:
+                        greeting = "Суперская Суббота";
+                        break;
+                    case 0:
+                        greeting = "Сонное Воскресенье";
+                        break;
+                    default:
+                        greeting = "Когда же наступят выходные!";
+                }
+                document.getElementById("greeting3").innerHTML = greeting;
+            };
+        </script>
+    </div>
+   
+</body>
+</html>

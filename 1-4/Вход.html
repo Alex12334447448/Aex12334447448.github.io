@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Вход_css.css">
+    <title>Страница входа</title>
+</head>
+<body>
+
+    <h1>Вход</h1>
+    
+    <!-- Строка для ввода имени пользователя -->
+    <div class="input-container">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username">
+    </div>
+
+    <!-- Строка для ввода Email -->
+    <div class="input-container">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <!-- Строка для ввода пароля -->
+    <div class="input-container">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <!-- Выбор пола -->
+    <div class="input-container">
+        <label>Пол:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужской</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женский</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Другой</label><br>
+    </div>
+
+    <!-- Кнопка для входа -->
+    <button>Войти</button>
+
+    <!-- Ссылка для возврата к форме Резюме -->
+    <p>Хотите вернуться на форму Резюме? <a href="index.html"> Резюме</a>.</p>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="order-form">
+        <div class="form-header">
+            <h2>Заказать</h2>
+            <button class="close-btn">&times;</button>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="blender">Блендер</label>
+                <p class="price">Стоимость: 1 000 &#8381;</p>
+            </div>
+            <div class="form-group">
+                <label for="color">Цвет</label>
+                <select id="color" name="color">
+                    <option value="red">Красный</option>
+                    <option value="blue">Синий</option>
+                    <option value="green">Зеленый</option>
+                    <option value="black">Черный</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Ваше Имя</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="policy" name="policy" required>
+                <label for="policy">Я принимаю условия <a href="#">политики обработки персональных данных</a></label>
+            </div>
+            <button type="submit" class="submit-btn">Оформить заявку</button>
+        </form>
+    </div>
+</body>
+</html>

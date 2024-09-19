@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вариант №30</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            transition: all 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(2);
+            border: 1px solid green;
+        }
+
+        /* Изначальные стили */
+        .dynamic-style {
+            background-color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Подготовительное задание -->
+    <h1>Иванов Александр Евгеньевич</h1>
+    <a href="https://www.realmadrid.com/es-ES" target="_blank">Мой любимый сайт</a>
+    <br>
+    <img id="image" src="https://avatars.mds.yandex.net/i?id=979a51a7ce27a26d92dfa923bdb1ac1fd2f14459-9106994-images-thumbs&n=13" alt="Пример изображения">
+    <br><br>
+
+    <!-- Кнопка для задания 3 -->
+    <button id="styleButton">Изменить стиль</button>
+
+    <!-- Форма для задания 5 -->
+    <form id="userForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="age" required>
+        <br><br>
+        <input type="submit" value="Отправить">
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Задание 2.1: Получение массива ссылок
+            let links = document.querySelectorAll('a');
+            console.log("Ссылки на странице:", links);
+
+            // Задание 2.2: Вывод ссылки через 1 секунду после запуска
+            setTimeout(function () {
+                alert("На странице есть " + links.length + " ссылка(и)");
+            }, 1000);
+
+            // Задание 2.3: Удаление изображения при клике
+            let image = document.getElementById('image');
+            image.addEventListener('click', function () {
+                image.remove();
+            });
+
+            // Задание 3: Изменение стилей после нажатия на кнопку
+            document.getElementById('styleButton').addEventListener('click', function () {
+                document.body.style.backgroundColor = "yellow"; // изменяем цвет фона
+                document.body.style.fontSize = "12px"; // изменяем размер текста
+                let images = document.querySelectorAll('img');
+                images.forEach(function (img) {
+                    img.style.border = "1px solid green"; // устанавливаем рамку вокруг изображения
+                });
+            });
+
+            // Задание 4.1: Получение информации о глубине цвета экрана
+            let colorDepth = window.screen.colorDepth;
+            console.log("Глубина цвета экрана:", colorDepth);
+
+            // Задание 4.2: Открытие нового окна с заданными параметрами
+            setTimeout(function () {
+                let newWindow = window.open("", "Screen Info", "width=800,height=600");
+                newWindow.document.write("<p>Информация о вашем экране: глубина цвета = " + colorDepth + "</p>");
+                newWindow.document.close();
+            }, 3000);
+
+            // Задание 5: Валидация формы
+            document.getElementById('userForm').addEventListener('submit', function (event) {
+                let name = document.getElementById('name').value;
+                let age = document.getElementById('age').value;
+
+                // Проверка на заполнение всех полей
+                if (!name || !age) {
+                    alert("Все поля должны быть заполнены!");
+                    event.preventDefault();
+                    return;
+                }
+
+                // Проверка формата возраста
+                if (age < 0 || age > 120) {
+                    alert("Возраст должен быть в пределах от 0 до 120 лет!");
+                    event.preventDefault();
+                    return;
+                }
+
+                alert("Форма успешно отправлена!");
+            });
+
+        });
+    </script>
+</body>
+</html>

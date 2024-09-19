@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Positive Numbers</title>
+</head>
+<body>
+    <script>
+        // Создаем массив из 5 целых элементов
+        const array = [3, -1, 7, 0, -5];
+        
+        // Функция для нахождения суммы положительных элементов
+        function sumPositiveNumbers(arr) {
+            return arr.reduce((sum, num) => {
+                return num > 0 ? sum + num : sum;
+            }, 0);
+        }
+
+        // Находим сумму положительных элементов
+        const sum = sumPositiveNumbers(array);
+
+        // Выводим результат на экран
+        document.write(`<p>Массив: [${array.join(', ')}]</p>`);
+        document.write(`<p>Сумма положительных элементов: ${sum}</p>`);
+    </script>
+</body>
+</html>

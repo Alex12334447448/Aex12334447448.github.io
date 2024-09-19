@@ -1,0 +1,164 @@
+/* Стили для body */
+@import "background_css.css";
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #c0db38; /*  цвет текста */
+}
+
+/* Стили для ссылок */
+a {
+    color: #7f3baf; /*  ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркиваем ссылку при наведении */
+}
+a:active {
+    color: #f08bbd; /*  цвет активной ссылки */
+}
+
+/* Стили для списка */
+ul {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0;
+}
+
+li:nth-child(odd){
+    color: rgb(0, 128, 0); /*  цвет нечетных элементов списка */
+}
+
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    width: 80%; /* ширина таблицы */
+}
+
+table, th, td {
+    border: 2px solid #abc; /* Измененные границы таблицы */
+    padding: 10px; /*  отступ */
+}
+/* Стили для body */
+@import "background_css.css";
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #c0db38; /*  цвет текста */
+}
+
+/* Стили для ссылок */
+a {
+    color: #7f3baf; /*  цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркиваем ссылку при наведении */
+}
+a:active {
+    color: #f08bbd; /*  цвет активной ссылки */
+}
+
+/* Стили для списка */
+ul {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0;
+}
+
+li:nth-child(odd){
+    color: rgb(0, 128, 0); /*  цвет нечетных элементов списка */
+}
+
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    width: 80%; /*  ширина таблицы */
+}
+
+table, th, td {
+    border: 2px solid #abc; /* Измененные границы таблицы */
+    padding: 10px; /*  отступ */
+}
+
+/* Стили для фотографии */
+img {
+    border-radius: 50%; /* Скругление углов */
+}
+
+/* Стили для аудио и видео */
+audio, video {
+    margin-top: 10px;
+}
+
+/* Стили для статьи */
+article {
+    margin-top: 20px;
+    font-family: "Micro 5", sans-serif; /* Измененный шрифт */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Стили для подвала */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #177; /*  цвет текста */
+}
+/* Стили для списка кнопок */
+.button-list {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0;
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Используем flexbox */
+}
+
+/* Стили для кнопок */
+.button {
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #c0db38; /* Цвет фона кнопки */
+    color: red; /* Цвет текста кнопки */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    margin-right: 10px; /* Отступ между кнопками */
+}
+
+.button:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+.button:hover {
+    background-color: #7f3baf; /* Цвет фона кнопки при наведении */
+}
+/* Стили для кнопки входа */
+.login-button {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 10px; /* Отступ от верхнего края */
+    right: 10px; /* Отступ от правого края */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #f08bbd; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    display: flex; /* Используем flexbox для выравнивания элементов внутри кнопки */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+/* Стили для иконки */
+.icon {
+    margin-right: 5px; /* Отступ между иконкой и текстом */
+    font-size: 16px; /* Размер иконки */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+

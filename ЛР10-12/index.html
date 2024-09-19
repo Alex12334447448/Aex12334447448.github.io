@@ -1,0 +1,23 @@
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текущий день в месяце</title>
+    <script>
+        // Функция для показа текущего дня месяца
+        function showDayOfMonth() {
+            // Создаем объект текущей даты
+            let currentDate = new Date();
+            // Получаем номер текущего дня месяца
+            let dayOfMonth = currentDate.getDate();
+            // Выводим его в диалоговое окно
+            alert("Текущий день месяца: " + dayOfMonth);
+        }
+    </script>
+</head>
+<body>
+    <!-- Кнопка для вызова функции -->
+    <button onclick="showDayOfMonth()">Показать текущий день</button>
+</body>
+</html>

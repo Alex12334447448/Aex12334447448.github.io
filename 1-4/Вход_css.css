@@ -1,0 +1,65 @@
+/* Общие стили для страницы */
+@import "back_css.css";
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Стили для контейнеров ввода */
+.input-container {
+    margin: 20px auto;
+    width: 300px;
+}
+
+/* Стили для меток */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Стили для текстовых полей */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* Стили для радио кнопок */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Стили для кнопки */
+button {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7f3baf;
+}
+
+/* Стили для ссылки */
+p a {
+    color: #f08bbd;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

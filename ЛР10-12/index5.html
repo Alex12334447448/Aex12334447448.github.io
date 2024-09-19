@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+    <script>
+        // Функция для выполнения всех операций со строками
+        function processStrings() {
+            // Создаем строки
+            let s1 = "ВАШЕ ИМЯ";
+            let s2 = "ВАШИ УВЛЕЧЕНИЯ";
+
+            // Определяем длину строки s1
+            let lengthOfS1 = s1.length;
+
+            // Вставляем дополнительные пробелы в строку s2
+            // Пример: добавление двух пробелов между словами
+            let s2WithSpaces = s2.replace(" ", "  "); // Замена одного пробела на два
+
+            // Заменяем "ВАШЕ ИМЯ" на "Павел" в строке s1
+            let s1Replaced = s1.replace("ВАШЕ ИМЯ", "Павел");
+
+            // Вывод результатов на страницу
+            document.getElementById('lengthS1').textContent = `Длина строки S1: ${lengthOfS1}`;
+            document.getElementById('s2WithSpaces').textContent = `Строка S2 с дополнительными пробелами: ${s2WithSpaces}`;
+            document.getElementById('s1Replaced').textContent = `Строка S1 после замены: ${s1Replaced}`;
+        }
+    </script>
+</head>
+<body onload="processStrings()">
+    <h1>Работа со строками</h1>
+    <p id="lengthS1"></p>
+    <p id="s2WithSpaces"></p>
+    <p id="s1Replaced"></p>
+</body>
+</html>

@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    background-image: url url("photo/my-photo.jpg");/* Вставьте URL изображения */
+    background-position: center;
+}
+
+h2.features {
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation {
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.main-navigation a {
+    color: black;
+    font: inherit;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: black;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #c0db38; /* Цвет фона */
+    color: #7f3baf; /* Цвет текста */
+    /* Вставьте другие значения, если необходимо */
+}
+
+.main-navigation a:hover {
+    background-color: #f08bbd;
+    color: rgb(0, 0, 0);
+}
+
+.main-navigation a:focus {
+    background-color: antiquewhite;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.main-navigation li {
+    margin: 0 10px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #000700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+}
+
+.container h3 {
+    display: flex;
+    justify-content:  space-between;
+    
+    flex-direction: row;
+}
+
+.container .button {
+    margin-top: 10px; /* Подберите нужный вам отступ сверху */
+}
+.button {
+    border: 1px solid #000;
+    font: inherit;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b9954e; /* Цвет фона */
+    color: #c0db38; /* Цвет текста */
+    border-radius: 20px; /* Скругление углов */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #7f3baf;
+}
+
+.features {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(102, 91, 52);
+}
+
+.features-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 30px;
+    line-height: 22px;
+}
+
+.feature-item p {
+    font-size: 18px;
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.gallery {
+    margin-right: 10px;
+}
+
+.services {
+    flex-grow: 1;
+}
+
+.contain h1 {
+    font-family: inherit;
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+.contain h2 {
+    font-family: inherit;
+    font-size: 26px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h2.portfolio {
+    padding: 20px;
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.main-footer {
+    color: black;
+    background-color: rgb(248, 214, 170);
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.footer-contacts a {
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: rgb(0, 0, 0);
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.slider-container {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 600px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-btn-left {
+    left: 0;
+}
+
+.slider-btn-right {
+    right: 0;
+}
